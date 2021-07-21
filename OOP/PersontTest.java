@@ -12,25 +12,20 @@ public class PersontTest {
 	
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
+		String str = "24/01/1997";
+		Date d1 = sdf.parse(str);
+		p.setDOB(d1);
 		
-		 p.setName("Shubham");
-		 String d = "24/01/1997";
-		 Date d1 = sdf.parse(d);
-		 p.setDOB(d1);
-		 
-		 Date c = p.getDOB();
-		 p.setAddress("Indore");
-		 String k = sdf.format(d1);
-		// System.out.println("Original date="+k);
-		 p.setDOB(c);
-		 
-		 Date f = p.getDOB();
-		 
-		// System.out.println(k);
+		Date d2 = p.getDOB();
+		
+		p.setName("Shubham Bairagi");
+		p.setAddress("Indore");
+		
+		
 		 
 		 
 		 System.out.println("Name = "+p.getName());
-		 System.out.println("DOB = "+ sdf.format(f) );
+		 System.out.println("DOB = "+ sdf.format(d2));
 		 System.out.println("Address = "+p.getAddress());
 	}
 

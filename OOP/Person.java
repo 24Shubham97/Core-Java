@@ -5,6 +5,7 @@ public class Person
 	private String name;
 	private Date DOB;
 	private String address;
+	public static final int AVG_AGE = 70;
 	
 	public String getName() {
 		return name;
